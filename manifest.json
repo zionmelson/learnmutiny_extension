@@ -25,7 +25,7 @@
           ],
   "background": 
       {
-        "service_worker": "background.js"
+        "service_worker": "sw.js"
       },
   "content_scripts": 
     [
@@ -38,16 +38,10 @@
     [
       {
         "resources": [
-          "assets/bookmark.png",
-          "assets/play.png",
-          "assets/delete.png",
-          "assets/save.png",
+          "assets/bear2.png",
           "assets/bear.png"
         ],
-        "matches": [
-          "https://*.youtube.com/*",
-          "https://*.w3schools.com/*"
-        ]
+        "matches": ["<all_urls>"]
       }
     ],
   "action": 
