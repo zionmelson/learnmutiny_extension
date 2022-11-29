@@ -65,6 +65,6 @@ async function encryptLink(_url) {
 
 function displayEncryptedLink(short) {
   urlPlaceholder.innerHTML = `
-  <h4>Bookmarked link:</h4> 
+  <h4>Encrypted bookmark:</h4> 
   <h4>${short.result_url}</h4>`;
 }
