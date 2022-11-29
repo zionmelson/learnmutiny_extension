@@ -2,20 +2,27 @@
   "name": "learnmutiny",
   "version": "0.1.0",
   "description": "learnmutiny browser extension",
+  "icons": 
+        {
+          "16": "assets/bear.png",
+          "32": "assets/bear.png",
+          "48": "assets/bear.png",
+          "128": "assets/bear.png"
+        },
   "permissions": 
       [
         "storage", 
-        "tabs", 
+        "tabs",
+        "activeTab", 
         "declarativeNetRequest",  
         "geolocation", 
         "mdns", 
         "proxy"
       ],
-  "host_permissions":  
-      [
-        "https://*.youtube.com/*",
-        "https://*.w3schools.com/*"
-      ],
+  "host_permissions": [
+          "http://*/*",
+          "https://*/*"
+          ],
   "background": 
       {
         "service_worker": "background.js"
@@ -23,11 +30,7 @@
   "content_scripts": 
     [
       {
-        "matches": 
-          [
-            "https://*.youtube.com/*",
-            "https://*.w3schools.com/*"
-          ],
+        "matches": ["<all_urls>"],
         "js": ["contentScript.js"]
       }
     ],
