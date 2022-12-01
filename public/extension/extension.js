@@ -48,7 +48,7 @@ function setDefault() {
 
   extension.className = "default-bookmark";
 
-  imagePlaceholder.src = "assets/bear.png";
+  imagePlaceholder.src = "../../assets/bear.png";
   imagePlaceholder.className = "default-page-image";
 
   bookmark.className = "default-button";

@@ -25,13 +25,13 @@
           ],
   "background": 
       {
-        "service_worker": "sw.js"
+        "service_worker": "public/sw.js"
       },
   "content_scripts": 
     [
       {
         "matches": ["<all_urls>"],
-        "js": ["contentScript.js"]
+        "js": ["public/contentScript.js"]
       }
     ],
   "web_accessible_resources": 
@@ -53,7 +53,7 @@
           "32": "assets/bear2.png"
         },
       "default_title": "learnmutiny extension",
-      "default_popup": "extension.html"
+      "default_popup": "public/login/login.html"
     },
   "manifest_version": 3
 }
