@@ -53,7 +53,7 @@
           "32": "assets/bear2.png"
         },
       "default_title": "learnmutiny extension",
-      "default_popup": "public/extension/bookmarks/extension.html"
+      "default_popup": "public/login/mobile/index.html"
     },
   "manifest_version": 3
 }
