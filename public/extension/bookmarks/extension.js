@@ -17,6 +17,7 @@ let setStarRating = false;
 
 chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
   let url = tabs[0].url;
+  console.log(tabs[0]);
 
   if (!url.startsWith("chrome://")) {
     let image = tabs[0].favIconUrl;
@@ -48,7 +49,7 @@ function setDefault() {
 
   extension.className = "default-bookmark";
 
-  imagePlaceholder.src = "../../assets/bear.png";
+  imagePlaceholder.src = "../../../assets/bear.png";
   imagePlaceholder.className = "default-page-image";
 
   bookmark.className = "default-button";
@@ -84,7 +85,8 @@ function displayEncryptedLink(short) {
 
   urlPlaceholder.innerHTML = `
   <h4>Encrypted bookmark:</h4> 
-  <p>${short.result_url}</p>`;
+  <p>${short.result_url}</p>
+  <a href="../bookmarks-display/display.html">Bookmarks</a>`;
 }
 
 function setRating(_stars) {

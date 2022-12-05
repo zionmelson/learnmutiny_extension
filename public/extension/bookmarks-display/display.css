@@ -1,0 +1,29 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+body {
+  color: #fff;
+  background-color: #2a2a2d;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 20rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.back-to-page {
+  font-size: 15px;
+  color: #fff;
+}
