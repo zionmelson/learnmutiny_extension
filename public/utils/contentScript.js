@@ -5,7 +5,7 @@ chrome.runtime.onMessage.addListener((obj, sender, response) => {
 });
 
 const newPage = () => {
-  console.log("HERE IS TEST");
+  console.log("HERE IS TEST AGAIN");
 };
 
 newPage();

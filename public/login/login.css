@@ -1,0 +1,175 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #fff;
+}
+
+body {
+  background-color: #242424;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+@media all and (max-width: 400px) {
+  .container {
+    width: 15rem;
+    height: 35rem;
+  }
+
+  .title {
+    padding: 1rem;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 0;
+  }
+
+  .login-text {
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  .login-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    user-select: none;
+  }
+
+  .image-footer {
+    padding: 0;
+    margin: 0;
+  }
+
+  .bear {
+    position: absolute;
+    width: 500px;
+    left: -50px;
+    top: 240px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+    clip: rect(100px, 1216px, 1216px, 0px);
+  }
+
+  .google {
+    width: 65px;
+  }
+
+  .meta {
+    width: 80px;
+  }
+
+  #google-login {
+    background-color: #363636;
+    border-radius: 70px;
+    border: none;
+    margin: 10px;
+    padding: 8px;
+  }
+
+  #meta-login {
+    background-color: #363636;
+    border-radius: 70px;
+    border: none;
+    margin: 10px;
+    padding: 2px;
+  }
+
+  #meta-login:hover,
+  #google-login:hover {
+    cursor: pointer;
+    background-color: #3f3f3f;
+  }
+}
+
+@media all and (min-width: 401px) {
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .title {
+    font-size: 150px;
+    margin: 3rem;
+  }
+
+  .login-text {
+    margin: 3rem;
+    font-weight: 800;
+    font-size: 70px;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .seperator-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .login-info {
+    display: flex;
+  }
+
+  .login-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .google {
+    width: 100px;
+  }
+
+  .meta {
+    width: 120px;
+  }
+
+  #google-login {
+    background-color: #363636;
+    border-radius: 100px;
+    border: none;
+    margin: 10px;
+    padding: 2px;
+    width: 150px;
+    height: 150px;
+  }
+
+  #meta-login {
+    background-color: #363636;
+    border-radius: 100px;
+    border: none;
+    margin: 10px;
+    padding: 2px;
+    width: 150px;
+    height: 150px;
+  }
+
+  #meta-login:hover,
+  #google-login:hover {
+    cursor: pointer;
+    background-color: #3f3f3f;
+  }
+
+  .bear {
+    position: relative;
+    width: 600px;
+  }
+}
