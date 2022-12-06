@@ -1,3 +1,5 @@
+//deprecated
+
 // adding a new bookmark
 
 const extension = document.querySelector(".bookmarks");
